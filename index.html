@@ -26,7 +26,7 @@
   <body>
     <main>
       <!-- Rating state start -->
-      <div class="rating-container">
+      <div id="rating-container" class="rating-container">
         <div class="icon">
           <img src="images/icon-star.svg" alt="" />
         </div>
@@ -46,19 +46,21 @@
           <button id="number" class="number" type="submit" value="5">5</button>
         </div>
 
-        <button class="submit-button" type="submit">Submit</button>
+        <button id="submit-button" class="submit-button" type="submit">
+          Submit
+        </button>
       </div>
 
       <!-- Rating state end -->
 
       <!-- Thank you state start -->
-      <div class="thankyou-container">
+      <div id="thankyou-container" class="thankyou-container hidden">
         <div class="img-container">
           <img src="images/illustration-thank-you.svg" alt="" />
         </div>
 
         <div class="user-selection-result">
-          <p>You selected ??? out of 5</p>
+          <p>You selected <span id="result"></span> out of 5</p>
         </div>
 
         <h1 class="header">Thank you!</h1>
